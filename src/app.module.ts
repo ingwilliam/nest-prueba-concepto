@@ -9,7 +9,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
     ConfigModule.forRoot(),
     TypeOrmModule.forRoot({
       type: 'postgres',
-      url: process.env.DATABASE_PRIVATE_URL, // Aquí defines la cadena de conexión
+      url: process.env.DATABASE_URL, // Aquí defines la cadena de conexión
       /*
       host: process.env.DB_HOST,
       port: +process.env.DB_PORT,
